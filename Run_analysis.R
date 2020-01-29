@@ -39,5 +39,6 @@ ProjectOut <- Selection %>%
       group_by(subject, activity) %>%
       summarise_all(funs(mean))
 write.table(ProjectOut, "ProjectOut.txt", row.name=FALSE)
-#Check
+#Six: Check
 str(ProjectOut)
+print(ProjectOut)
